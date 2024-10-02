@@ -3,7 +3,7 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { log } from "console";
 
 // db
-import db from "./db.js";
+import db from "./_db.js";
 
 // types
 import { typeDefs } from "./schema.js";
