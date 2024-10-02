@@ -1,8 +1,8 @@
 export const typeDefs = `#graphql
 type Game {
     id: ID!  # ID is non-nullable
-    title: String!  # Title is non-nullable
-    platform: [String!]!  # Platform is a non-nullable list of non-nullable strings
+    title: String!  
+    platform: [String!]!  
 }
 
 type Review {
@@ -19,7 +19,10 @@ type Author {
 
 type Query {
     reviews: [Review]
+    review(id: ID!): Review 
     games: [Game]
+    game(id: ID!): Game
     authors: [Author]
+    author(id: ID!): Author
 }
 `;
